@@ -22,7 +22,7 @@ audio.addEventListener('canplaythrough', function() {
 }, false);
 ```
 
-###Instantiation
+###Usage
 
 Crusher requires an `AudioContext` on instantiation, and optionally accepts:
 
