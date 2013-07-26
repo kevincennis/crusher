@@ -3,7 +3,7 @@ crusher
 
 It's not a player, it just crushes a lot.
 
-###Get Started:
+###Get Started
 
 ```javascript
 var ac = new webkitAudioContext()
