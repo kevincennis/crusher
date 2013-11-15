@@ -34,7 +34,7 @@
       , iR = inp.getChannelData(1)
       , oL = out.getChannelData(0)
       , oR = out.getChannelData(1)
-      , step = Math.pow(0.5, this.bits)
+      , step = Math.pow(0.5, this.bits - 1)
       , len = inp.length
       , sample = 0
       , lastL = 0
