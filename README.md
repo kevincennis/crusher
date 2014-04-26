@@ -6,11 +6,11 @@ It's not a player, it just crushes a lot.
 ###Get Started
 
 ```javascript
-var ac = new webkitAudioContext()
-  , crusher = new Crusher(ac)
-  , url = 'path/to/file.mp3'
-  , audio = new Audio()
-  , src;
+var ac = new webkitAudioContext(),
+  crusher = new Crusher(ac),
+  url = 'path/to/file.mp3',
+  audio = new Audio(),
+  src;
 
 audio.src = url;
 
