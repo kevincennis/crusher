@@ -28,18 +28,18 @@
   };
   
   Crusher.prototype.crush = function( e ) {
-    var inp = e.inputBuffer
-      , out = e.outputBuffer
-      , iL = inp.getChannelData(0)
-      , iR = inp.getChannelData(1)
-      , oL = out.getChannelData(0)
-      , oR = out.getChannelData(1)
-      , step = Math.pow(0.5, this.bits - 1)
-      , len = inp.length
-      , sample = 0
-      , lastL = 0
-      , lastR = 0
-      , i = 0;
+    var inp = e.inputBuffer,
+      out = e.outputBuffer,
+      iL = inp.getChannelData(0),
+      iR = inp.getChannelData(1),
+      oL = out.getChannelData(0),
+      oR = out.getChannelData(1),
+      step = Math.pow(0.5, this.bits - 1),
+      len = inp.length,
+      sample = 0,
+      lastL = 0,
+      lastR = 0,
+      i = 0;
     for ( ; i < len; ++i ) {
       if ( (sample += this.reduction) >= 1 ) {
         sample--;
